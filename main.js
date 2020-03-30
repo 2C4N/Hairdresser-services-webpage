@@ -85,5 +85,3 @@ function priceGenerator() {
     document.getElementById("prices").appendChild(row);
   }
 }
-
-//automatyzacja galerii?
