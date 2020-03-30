@@ -77,6 +77,7 @@ function priceGenerator() {
     row.appendChild(name);
     row.appendChild(price);
     name.style.width = "65%";
+    name.style.textIndent = "20%";
     name.className = "priceText";
     price.style.width = "35%";
     price.style.textAlign = "center";
