@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Opinie</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <h1>Niko</h1>
+        <p>Usługi fryzjerskie</p>
+      </div>
+      <div class="menu">
+        <table id="menu">
+          <script>
+            menuGenerator();
+          </script>
+        </table>
+      </div>
+    </nav>
+    <div class="wrap">
+      <div class="textContent" id="Review_1">
+        <p>
+          Nigdy jeszcze tak się nie relaksowałem, mimo że miałem brzytwe przy
+          szyi.
+        </p>
+        <script>
+          stars("Review_1", 3);
+        </script>
+      </div>
+      <div class="textContent" id="Review_2">
+        <p>Przygotowana na wesele jak nigdy! Polecam panią Basię. :)</p>
+        <script>
+          stars("Review_2", 5);
+        </script>
+      </div>
+      <div class="textContent" id="Review_3">
+        <p>Epidemia panuje, a oni nadal przyjmują. To niebezpieczne!</p>
+        <script>
+          stars("Review_3", 1);
+        </script>
+      </div>
+      <div class="textContent" id="Review_4">
+        <p>Otwarci mimo epidemii. Niesamowite!</p>
+        <script>
+          stars("Review_4", 4);
+        </script>
+      </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+  </body>
+</html>

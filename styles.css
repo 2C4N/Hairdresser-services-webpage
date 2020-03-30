@@ -1,0 +1,220 @@
+:root {
+  --bg-color: #2c3e50;
+  --main-color: #1abc9c;
+  --secondary-color: #ecf0f1;
+}
+
+body {
+  margin: 0;
+  color: #ecf0f1;
+  font-family: sans-serif;
+}
+
+.wrap {
+  width: 100%;
+  height: calc(100% - 100px);
+  background: url(/zdjęcia/background.jpg) top center no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  float: left;
+  overflow: auto;
+}
+
+nav {
+  width: 100%;
+  height: 95px;
+  background-color: var(--bg-color);
+  float: left;
+  overflow: hidden;
+  border-bottom: 5px solid var(--main-color);
+}
+
+.logo {
+  width: 20%;
+  position: relative;
+  top: 50%;
+  transform: translate(0%, -50%);
+  float: left;
+}
+
+.logo p {
+  text-align: center;
+  line-height: 0px;
+  font-family: monospace;
+  font-size: 15px;
+}
+
+.logo h1 {
+  text-align: center;
+  line-height: 0px;
+  font-size: 45px;
+  font-weight: 800;
+  margin-top: 20px;
+  color: var(--main-color);
+}
+
+.menu {
+  width: 80%;
+  height: 100%;
+  float: right;
+  margin: auto;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.menu table {
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+  margin: auto;
+  border-spacing: 40px;
+}
+
+.menu td {
+  text-align: center;
+  width: 150px;
+  height: 100px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.menu td:hover {
+  color: var(--main-color);
+}
+
+.menu a {
+  text-decoration: solid;
+  color: #ffcf40;
+}
+
+.textContent {
+  max-width: 750px;
+  min-height: 25px;
+  margin: auto;
+  margin-top: 50px;
+  padding: 25px;
+  text-align: justify;
+  background-color: var(--bg-color);
+  line-height: 20px;
+  border-bottom: 5px solid var(--main-color);
+}
+
+.textContent p {
+  margin: 0;
+}
+
+.stars {
+  margin-top: 25px;
+  color: var(--main-color);
+}
+
+.images td {
+  width: 250px;
+  height: 250px;
+}
+
+.slideshow {
+  width: 100%;
+  height: 85%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: auto;
+  overflow: hidden;
+  padding: 50px 0px;
+}
+
+.navigator {
+  position: absolute;
+  bottom: 70px;
+  left: 50%;
+  height: 50px;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.bar {
+  width: 35px;
+  height: 30px;
+  margin: 10px;
+  background-color: var(--bg-color);
+  cursor: pointer;
+  border-bottom: 5px solid var(--main-color);
+  transition: 0.2s;
+}
+
+.bar:hover {
+  background-color: var(--main-color);
+}
+
+input[name="image"] {
+  position: absolute;
+  visibility: hidden;
+}
+
+.slides {
+  width: 500%;
+  height: 100%;
+  display: flex;
+}
+
+.slide {
+  width: 20%;
+  transition: 0.6s;
+}
+
+.slide img {
+  height: 100%;
+  width: auto;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom: 5px solid var(--main-color);
+}
+
+#image1:checked ~ .s1 {
+  margin-left: 0;
+}
+#image2:checked ~ .s1 {
+  margin-left: -20%;
+}
+#image3:checked ~ .s1 {
+  margin-left: -40%;
+}
+#image4:checked ~ .s1 {
+  margin-left: -60%;
+}
+#image5:checked ~ .s1 {
+  margin-left: -80%;
+}
+
+.textContent table {
+  width: 65%;
+  height: 100%;
+  margin: auto;
+}
+
+.textContent h2 {
+  padding-top: 10px;
+  padding-bottom: 35px;
+  margin: 0;
+  text-align: center;
+  font-size: 40px;
+}
+
+.contact {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+.icon {
+  width: 10%;
+  height: 50px;
+  font-size: 20px;
+  text-align: right;
+}

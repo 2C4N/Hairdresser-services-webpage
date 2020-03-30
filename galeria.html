@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Galeria</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <h1>Niko</h1>
+        <p>Usługi fryzjerskie</p>
+      </div>
+      <div class="menu">
+        <table id="menu">
+          <script>
+            menuGenerator();
+          </script>
+        </table>
+      </div>
+    </nav>
+    <div class="wrap">
+      <div class="slideshow">
+        <div class="slides">
+          <input type="radio" name="image" id="image1" checked />
+          <input type="radio" name="image" id="image2" />
+          <input type="radio" name="image" id="image3" />
+          <input type="radio" name="image" id="image4" />
+          <input type="radio" name="image" id="image5" />
+          <div class="slide s1">
+            <img src="/zdjęcia/galeria/aktor_1.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/zdjęcia/galeria/aktor_2.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/zdjęcia/galeria/aktor_3.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/zdjęcia/galeria/aktor_4.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/zdjęcia/galeria/aktor_5.jpg" alt="" />
+          </div>
+        </div>
+        <div class="navigator">
+          <label for="image1" class="bar"></label>
+          <label for="image2" class="bar"></label>
+          <label for="image3" class="bar"></label>
+          <label for="image4" class="bar"></label>
+          <label for="image5" class="bar"></label>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
