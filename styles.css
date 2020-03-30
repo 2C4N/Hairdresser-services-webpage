@@ -34,7 +34,7 @@ nav {
   height: 95px;
   background-color: var(--bg-color);
   float: left;
-  overflow: hidden;
+  overflow: auto;
   border-bottom: 5px solid var(--main-color);
 }
 
