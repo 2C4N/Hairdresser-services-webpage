@@ -9,6 +9,18 @@
   background: var(--main-color);
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-color); 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: var(--main-color); 
+}
+
 body {
   margin: 0;
   color: var(--secondary-color);
