@@ -7,6 +7,7 @@ var menuLinks = [
   "kontakt.html"
 ];
 var priceName = [
+  "Oferta"
   "Strzyżenie damskie",
   "Strzyżenie męskie",
   "Modelowanie",
@@ -16,6 +17,7 @@ var priceName = [
   "Mycie głowy"
 ];
 var pricePrice = [
+  "kr | śr | dł"
   "65zł | 70zł | 75zł",
   "20zł | 25zł | 30zł",
   "50zł | 55zł | 65zł",
@@ -76,6 +78,10 @@ function priceGenerator() {
     price.appendChild(priceText);
     row.appendChild(name);
     row.appendChild(price);
+    if (i == 0)
+    {
+      this.name.style.fontWeight = "bold";
+    }
     name.style.width = "65%";
     name.style.textIndent = "20%";
     name.className = "priceText";
