@@ -7,7 +7,7 @@ var menuLinks = [
   "kontakt.html"
 ];
 var priceName = [
-  "Oferta",
+  "Oferta | Włosy",
   "Strzyżenie damskie",
   "Strzyżenie męskie",
   "Modelowanie",
@@ -78,9 +78,9 @@ function priceGenerator() {
     price.appendChild(priceText);
     row.appendChild(name);
     row.appendChild(price);
-    if (i == 0)
-    {
-      this.name.style.fontWeight = "bold";
+    if (i == 0) {
+      name.style.fontWeight = "bold";
+      price.style.fontWeight = "bold";
     }
     name.style.width = "65%";
     name.style.textIndent = "20%";
